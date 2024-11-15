@@ -1,8 +1,11 @@
 package cho.info.foundation;
 
+import cho.info.foundation.modules.Modules;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Foundation extends JavaPlugin {
+
+    public Modules modules;
 
     @Override
     public void onEnable() {
@@ -14,11 +17,21 @@ public final class Foundation extends JavaPlugin {
         }
 
 
-
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public void foundationInit() {
+        // Initialize modules
+
+        modules = new Modules(this);
+
+    }
+
+    public Modules getModules() {
+        return modules;
     }
 }

@@ -1,0 +1,54 @@
+itemname:
+  name: "Item Name" # Display name
+  material: "DIAMOND_SWORD" # Material
+  lore:
+      - "&7This is a lore line" # Lore
+
+  enchantments:
+    - "DAMAGE_ALL:1" # Enchantment
+    - "DURABILITY:1" # Enchantment
+
+  flags:
+    - "HIDE_ENCHANTS" # ItemFlag
+    - "HIDE_ATTRIBUTES" # ItemFlag
+
+  unbreakable: false # Unbreakable
+
+  custommodeldata: 1 # CustomModelData
+
+  attackdamage: 10 # Attack Damage
+
+  customTags:
+    - "tag1" # CustomTag
+    - "tag2" # CustomTag
+
+  function:
+
+    onrightclick:
+
+      runcommand:
+        - "say Hello" # RunCommand
+
+
+
+
+    onleftclick:
+
+      runcommand:
+        - "say Hello" # RunCommand
+
+    ondrop:
+
+      runcommand:
+        - "say Hello" # RunCommand
+
+    onPlace:  # Only works for blocks
+
+      runcommand:
+        - "say Hello" # RunCommand
+
+    onAttac:
+      particle:
+        - "FLAME:5" # Particle
+
+
