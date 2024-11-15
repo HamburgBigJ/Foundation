@@ -1,0 +1,5 @@
+name: Foundation
+version: '0.1'
+main: cho.info.foundation.Foundation
+api-version: '1.21'
+authors: [ HamburgBigJ ]
